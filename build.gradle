@@ -38,4 +38,10 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed"
+		showStandardStreams = true   // 표준 출력 보기 설정
+	}
 }
+
+
